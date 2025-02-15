@@ -1,0 +1,27 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Card;Trust ;;;
+FN:Trust  Card
+ORG:CRM-Aid
+ADR;TYPE=WORK:75 E 3rd St #7, Sheridan, WY 82801, USA
+TITLE:A Digital Business Card Generator
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:+14158910269
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:+14158910269
+EMAIL;TYPE=WORK:crmaid.ai@gmail.com
+URL;TYPE=Digital Business Card:
+URL:https://crmaid.ai
+URL;TYPE=Website:https://crmaid.ai
+URL;TYPE=Location:https://maps.app.goo.gl/66FxpgcuGa4mXZUaA
+URL;TYPE=Calendar:https://api.crmaid.ai/widget/bookings/crmaid-software-demo
+URL;TYPE=Facebook:https://facebook.com/https://www.facebook.com/profile.php?id=61563410570614
+URL;TYPE=Instagram:https://instagram.com/https://www.instagram.com/crmaid.ai/
+URL;TYPE=YouTube:https://youtube.com/https://www.youtube.com/@CRM-AID
+URL;TYPE=Play Store:https://play.google.com/store/apps/details?id=com.LeadConnector&pcampaignid=web_share
+URL;TYPE=App Store:https://apps.apple.com/us/app/lead-connector/id1564302502
+URL;TYPE=GitHub:https://github.com/https://github.com/CRM-Aid
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:TrustCard lets you create stunning, responsive HTML based digital business cards that can be easily hosted on your website.
+UID:TrustCard-100532885
+END:VCARD
