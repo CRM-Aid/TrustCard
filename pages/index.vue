@@ -1932,9 +1932,9 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.checkView)
     // TODO: Enable this in prod env
-    // window.onbeforeunload = function () {
-    //   return 'Your work will be lost.'
-    // }
+    window.onbeforeunload = function () {
+      return 'Your work will be lost.'
+    }
   },
 }
 </script>
