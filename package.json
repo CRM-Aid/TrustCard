@@ -8,6 +8,10 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
+  "engines": {
+    "node": ">=16 <18"
+  },
+  "engineStrict": true,
   "dependencies": {
     "@caohenghu/vue-colorpicker": "^1.2.4",
     "@nuxtjs/pwa": "^3.3.5",
@@ -17,7 +21,6 @@
     "id3-parser": "^2.0.0",
     "jszip": "^3.10.1",
     "nuxt": "^2.15.8",
-    "pako": "^2.1.0",
     "vue-clickaway2": "^2.3.2",
     "vuedraggable": "^2.24.3"
   },
