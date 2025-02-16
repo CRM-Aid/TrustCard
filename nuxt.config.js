@@ -17,17 +17,17 @@ export default {
     ogType: 'website',
     ogImage: '/maskable_512.png',
     // ogUrl: false,
-    ogTitle: 'TrustCard - A Digital Business Card Generator',
+    ogTitle: 'TrustCard - Digital Business Card Generator',
     ogDescription:
       'TrustCard helps you create beautiful, responsive HTML-based digital business cards that can be hosted on your website.',
-    ogSiteName: 'TrustCard - A Digital Business Card Generator',
+    ogSiteName: 'TrustCard - Digital Business Card Generator',
     theme_color: '#111827',
     author: 'Rahul Porel',
     lang: 'en',
-    name: 'TrustCard - A Digital Business Card Generator',
+    name: 'TrustCard - Digital Business Card Generator',
   },
   head: {
-    title: 'TrustCard - A Digital Business Card Generator',
+    title: 'TrustCard - Digital Business Card Generator',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -77,10 +77,28 @@ export default {
         href: '/safari-pinned-tab.svg',
       },
     ],
-    script: [{ src: '/qrcode.min.js' }],
+    script: [
+      { src: '/qrcode.min.js' },
+      {
+        hid: 'gtag-js',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-0XN92JF0TP',
+        async: true,
+      },
+      {
+        hid: 'gtag-config',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0XN92JF0TP');
+        `,
+        type: 'text/javascript',
+      },
+    ],
+    __dangerouslyDisableSanitizers: ['script'],
   },
   manifest: {
-    name: 'TrustCard - A Digital Business Card Generator',
+    name: 'TrustCard - Digital Business Card Generator',
     short_name: 'TrustCard',
     start_url: '/',
     display: 'standalone',

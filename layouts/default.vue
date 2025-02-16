@@ -66,6 +66,12 @@ html {
   justify-content: space-between;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
+.StepS.secActions {
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(3rem, auto));
+}
 .ghost {
   opacity: 0.5;
 }

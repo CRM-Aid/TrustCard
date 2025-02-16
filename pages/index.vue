@@ -394,22 +394,22 @@
               >
               on Telegram
             </p>
-            <div class="stepC actions">
+            <div class="StepS secActions">
               <button
                 v-for="(action, index) in filteredSecondaryActions"
                 :key="index"
                 @click="addAction('secondaryActions', action.name)"
-                class="p-3 flex items-center shrink-0 rounded hover:brightness-125 focus:brightness-125 transition-all duration-200 focus:outline-none"
+                class="p-3 flex-shrink-0 rounded-full hover:scale-125 focus:scale-125 transform transition-transform duration-200 focus:outline-none"
                 :style="{ background: action.color }"
                 :title="
                   action.name.substr(0, 1).toUpperCase() + action.name.slice(1)
                 "
               >
                 <div
-                  class="w-6 h-6 mr-3 shrink-0"
+                  class="w-6 h-6"
                   v-html="require(`~/assets/icons/${action.icon}.svg?include`)"
                 ></div>
-                <p
+                <!-- <p
                   class="whitespace-nowrap"
                   :class="{ 'text-gray-900': action.light }"
                 >
@@ -417,7 +417,7 @@
                     action.name.substr(0, 1).toUpperCase() +
                     action.name.slice(1)
                   }}
-                </p>
+                </p> -->
               </button>
             </div>
           </div>
@@ -810,7 +810,7 @@ export default {
         primaryActions: [
           {
             name: 'Mobile',
-            icon: 'call',
+            icon: 'Mobile',
             href: 'tel:',
             placeholder: '+XX XXXXX XXXXX',
             value: null,
@@ -820,7 +820,7 @@ export default {
           },
           {
             name: 'Office',
-            icon: 'call',
+            icon: 'Office',
             href: 'tel:',
             placeholder: '+XX XXXXX XXXXX',
             value: null,
@@ -830,7 +830,7 @@ export default {
           },
           {
             name: 'Home',
-            icon: 'call',
+            icon: 'Home',
             href: 'tel:',
             placeholder: '+XX XXXXX XXXXX',
             value: null,
@@ -994,16 +994,16 @@ export default {
             order: 18,
             isURL: 1,
           },
-          // {
-          //   name: 'IRC',
-          //   icon: 'irc',
-          //   href: 'irc:',
-          //   placeholder: 'IRC ID',
-          //   value: null,
-          //   label: 'IRC ID',
-          //   order: 19,
-          //   isURL: 1,
-          // },
+          {
+            name: 'fax',
+            icon: 'fax',
+            href: 'tel:',
+            placeholder: '+1XXXXXXXXXX',
+            value: null,
+            label: 'Your Fax Number',
+            order: 18,
+            isURL: 0,
+          },
         ],
         secondaryActions: [
           // todo: Fix Instagram gradient icon preview
@@ -1113,6 +1113,7 @@ export default {
             light: 1,
             label: 'Peertube channel URL',
           },
+
           {
             name: 'Pinterest',
             icon: 'pinterest',
@@ -1369,6 +1370,15 @@ export default {
             light: 1,
             label: 'Buy me a coffee username',
           },
+          //  {
+          //   name: 'GoHighLevel',
+          //   icon: 'HighLevel',
+          //   placeholder: 'https://gohighlevel.com/url',
+          //   value: null,
+          //   color: '#08213d',
+          //   light: 1,
+          //   label: 'HighLevel URL',
+          // },
         ],
       },
       featured: [
