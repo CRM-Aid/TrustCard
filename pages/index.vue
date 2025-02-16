@@ -37,7 +37,7 @@
     <transition name="fade">
       <Preview
         v-show="showPreview"
-        class="fixed sm:top-20 top-28 w-full bottom-0 z-20 border-none rounded-b-none"
+        class="fixed top-24 w-full bottom-0 z-20 border-none rounded-b-none"
         ref="html"
         :username="username"
         :genInfo="genInfo"
@@ -81,7 +81,11 @@
         <li>
           -&ensp;Generate unlimited digital business cards for you & your team
         </li>
+        <li>
+          -&ensp;Share your contact details seamlessly via link or QR code.
+        </li>
         <li>-&ensp;Host your business card for free on your domain</li>
+        <li>-&ensp;.vcf file included with every business card</li>
         <li>-&ensp;No user tracking & data collection</li>
         <li>-&ensp;Works offline like a charm</li>
       </ul>
